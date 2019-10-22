@@ -52,12 +52,12 @@ void    Arbre::AfficherArbre(){
  void    Arbre::AfficherArbrePrivee(Noeud* Ptr){
   if (root !=NULL){
         if (Ptr->gauche !=NULL){
-            AfficherArbrePrivee(Ptr->gauche);
+            AfficherArbrePrivee(Ptr->droite);
         }
         cout << Ptr->cle << " ** ";
 
         if (Ptr->droite !=NULL){
-            AfficherArbrePrivee(Ptr->droite);
+            AfficherArbrePrivee(Ptr->gauche);
         }
     }
     else{
